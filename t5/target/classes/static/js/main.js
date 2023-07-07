@@ -4,13 +4,14 @@ var robot = null;
 //variabili per il login
 var user = null;
 var password = null;
-
-
+var classe =  null;
 
 // Variabile per tenere traccia del bottone precedentemente selezionato
 var bottonePrecedente1 = null;
 // Variabile per tenere traccia del bottone precedentemente selezionato
 var bottonePrecedente2 = null;
+
+var selectedElement = null;
 
 function Handlebuttonclass(id, button) {
   $(document).ready(function () {
@@ -56,7 +57,6 @@ function redirectToPagereport() {
   console.log(classe);
   console.log(robot);
   if (classe && robot) {
-    window.location.href = "/report";
 
     $.ajax({
       url: '/sendVariable', // L'URL del tuo endpoint sul server
@@ -69,6 +69,7 @@ function redirectToPagereport() {
         console.log('Dati inviati con successo');
         alert("Dati inviati con successo");
         // Gestisci la risposta del server qui
+        window.location.href = "/report";
       },
       error: function (error) {
         console.error('Errore nell invio dei dati');
@@ -91,10 +92,23 @@ function redirectToPagemain() {
 
 
 function redirectToPagemainlogin() {
+
   user = document.getElementById("username").value;
   password = document.getElementById("password").value;
 if(user && password ){
   alert("Login effettuato con successo");
+  
+  $.ajax({
+    url:'/login-variabiles',
+    type: 'POST',
+    data: { 
+      var1: user, 
+      var2: password
+    },
+
+  })
+
+
   window.location.href = "/main";
 }
 else{
@@ -102,3 +116,56 @@ else{
 }
 }
 
+function redirectToPageeditor() {
+
+  $.ajax({
+    url:'/save-data',
+    type:'POST'
+  })
+  window.location.href = "/editor";
+}
+
+// Funzione per gestire il click sul bottone di download
+function downloadFile() {
+  fileId = classe;
+  if (fileId) {
+    const downloadUrl = '/download';
+    const formData = new FormData();
+    formData.append('elementId', fileId);
+
+    fetch(downloadUrl, {
+      method: 'POST',
+      body: formData
+    })
+      .then(function(response) {
+        if (response.ok) {
+          return response.blob();
+        } else {
+          throw new Error('Errore nella risposta del server');
+        }
+      })
+      .then(function(blob) {
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = "class.java";
+        link.click();
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(function(error) {
+        console.error('Errore nel download del file', error);
+      });
+  } else {
+    console.log('Nessun file selezionato');
+  }
+}
+
+function redirectToLogin() {
+  window.location.href = "/login";
+}
+
+function saveLoginData() {
+  var username = document.getElementById("username").value;
+
+  localStorage.setItem("username", username);
+}
