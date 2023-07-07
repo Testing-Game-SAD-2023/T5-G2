@@ -49,5 +49,7 @@ docker ps
 * T6 :point_right: [G12](https://github.com/Testing-Game-SAD-2023/T6-G12.git)
 #### Diagramma di deployment
 ![Deployment Diagram](https://github.com/Testing-Game-SAD-2023/T5-G2/assets/72261684/abe20856-215a-40f7-b2ac-8bb75e03414b)
+### :clipboard: Documentazione
+[Clicca qui]()
 
 
