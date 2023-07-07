@@ -15,7 +15,8 @@ public class FileController {
 public void listFilesInFolder(String folderPath) {
     try {
         ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        Resource[] resources = resolver.getResources("file:" + folderPath + "/*");
+        Resource[] resources = resolver.getResources(folderPath + "/*");
+
         for (Resource resource : resources) {
             if (resource.isFile()) {
                 //gestisco il nome del file eliminando l'estensione
