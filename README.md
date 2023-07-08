@@ -12,6 +12,10 @@ Il giocatore (dopo essersi autenticato) avvia una nuova partita del Primo Scenar
 #### :clapper: Video Dimostrazione
 
 
+https://github.com/Testing-Game-SAD-2023/T5-G2/assets/72261684/56415fb2-dcb5-466c-8215-bc50507c9815
+
+
+
 
 ### :bulb: Tool e framework
 ![4373217_java_logo_logos_icon](https://github.com/Testing-Game-SAD-2023/T5-G2/assets/72261684/1a8e4b40-8453-44f5-ae7a-2c4523b29183)
@@ -41,14 +45,11 @@ Per visualizzare delle informazioni relative all' applicazione in esecuzione:
 ```bash
 docker ps
 ```
-#### Diagramma dei componenti
-![T5](https://github.com/Testing-Game-SAD-2023/T5-G2/assets/72261684/ab3a70ec-688c-44ba-8fa7-7bbfa269788a)
 
 ### :handshake: Integrazione
 * T2-3 :point_right: [G1](https://github.com/Testing-Game-SAD-2023/T23-G1.git)
 * T6 :point_right: [G12](https://github.com/Testing-Game-SAD-2023/T6-G12.git)
-#### Diagramma di deployment
-![Deployment Diagram](https://github.com/Testing-Game-SAD-2023/T5-G2/assets/72261684/abe20856-215a-40f7-b2ac-8bb75e03414b)
+
 ### :clipboard: Documentazione
 [Clicca qui]()
 
