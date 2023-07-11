@@ -22,8 +22,12 @@ https://github.com/Testing-Game-SAD-2023/T5-G2/assets/72261684/56415fb2-dcb5-466
 ![65687_html_logo_html5_5_five_icon](https://github.com/Testing-Game-SAD-2023/T5-G2/assets/72261684/6aaf2323-475e-474c-888c-4d4324902fb0)
 ![9055841_bxl_spring_boot_icon](https://github.com/Testing-Game-SAD-2023/T5-G2/assets/72261684/cf720665-8706-4d34-b80e-f3bb7d199e39)
 ![4373190_docker_logo_logos_icon](https://github.com/Testing-Game-SAD-2023/T5-G2/assets/72261684/37df3b0b-d0c0-43f8-988a-edd0b36425ee)
+![icons8-automazione-del-test-di-selenio-64](https://github.com/Testing-Game-SAD-2023/T5-G2/assets/72261684/ce90aed2-f61c-40a8-b02f-69a1a3bb1ab6)
 ![308436_css_front-end_long shadow_web_web technology_icon](https://github.com/Testing-Game-SAD-2023/T5-G2/assets/72261684/a696f142-71fd-4524-b984-aaf943e91ab9)
 ![9039990_bootstrap_icon](https://github.com/Testing-Game-SAD-2023/T5-G2/assets/72261684/a00b17bf-7deb-4d4b-9e49-c4de97fbe44c)
+
+
+
 
 ### :floppy_disk: Installazione
 #### :bangbang: Prerequisiti
@@ -52,5 +56,8 @@ docker ps
 
 ### :clipboard: Documentazione
 [Clicca qui]()
+
+## :white_check_mark: Testing
+
 
 
