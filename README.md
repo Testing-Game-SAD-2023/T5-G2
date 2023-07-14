@@ -55,7 +55,7 @@ docker ps
 * T6 :point_right: [G12](https://github.com/Testing-Game-SAD-2023/T6-G12.git)
 
 ### :clipboard: Documentazione
-[Clicca qui]()
+[Clicca qui](https://github.com/Testing-Game-SAD-2023/T5-G2/blob/main/Documentazione/T5-G2.pdf)
 
 ## :white_check_mark: Testing
 https://github.com/Testing-Game-SAD-2023/T5-G2/assets/72261684/c87b76b0-1575-483e-9f2d-eee072fa6c72
