@@ -58,6 +58,8 @@ docker ps
 [Clicca qui]()
 
 ## :white_check_mark: Testing
+https://github.com/Testing-Game-SAD-2023/T5-G2/assets/72261684/c87b76b0-1575-483e-9f2d-eee072fa6c72
+
 
 
 
